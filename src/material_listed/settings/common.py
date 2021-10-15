@@ -51,9 +51,7 @@ THIRD_PARTY_APPS = (
     "allauth.socialaccount.providers.google",
 )
 
-OUR_APPS = (
-    "base",
-)
+OUR_APPS = ("base",)
 
 INSTALLED_APPS = CORE_APPS + OUR_APPS + THIRD_PARTY_APPS
 
@@ -146,13 +144,16 @@ ACCOUNT_UNIQUE_EMAIL = True
 ACCOUNT_EMAIL_REQUIRED = True
 
 SOCIALACCOUNT_PROVIDERS = {
-    'google': {
-        'SCOPE': [
-            'profile',
-            'email',
+    "google": {
+        "SCOPE": [
+            "profile",
+            "email",
         ],
-        'AUTH_PARAMS': {
-            'access_type': 'online',
-        }
+        "AUTH_PARAMS": {
+            "access_type": "online",
+        },
     }
 }
+
+
+DISPLAY_CARD_VALUE = 30
