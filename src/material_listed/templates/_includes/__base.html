@@ -29,9 +29,12 @@
   <style>
     body {
       font-family: "Nunito Sans", sans-serif;
-      background-color: #121212;
+      background-color: #292b2c;
     }
   </style>
+
+  {% block custom_css %}
+  {% endblock %}
   <body>
     {% include '_includes/_navbar.html' %}
     {%if messages %}
