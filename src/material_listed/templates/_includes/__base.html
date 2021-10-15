@@ -12,18 +12,39 @@
       integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;1,400&display=swap"
+      rel="stylesheet"
+    />
   </head>
+
+  <style>
+    body {
+      font-family: "Nunito Sans", sans-serif;
+      background-color: #121212;
+    }
+  </style>
   <body>
+    {% include '_includes/_navbar.html' %}
     {%if messages %}
     <ul class="messages list-unstyled text-center">
       {% for message in messages %}
-      <li class="bg-info mx-3 p-2 text-white-50 {% if message.tags %}{{ message.tags }}{% endif %}">{{ message }}</li>
+      <li
+        class="bg-info mx-3 p-2 text-white-50 {% if message.tags %}{{ message.tags }}{% endif %}"
+      >
+        {{ message }}
+      </li>
       {% endfor %}
-  </ul>
-    {% endif %}
-
-
-    {% block content %} {% endblock %}
+    </ul>
+    {% endif %} {% block content %} {% endblock %}
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
