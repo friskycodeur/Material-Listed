@@ -13,13 +13,14 @@
     margin: 6rem 0 5rem 13rem;
     padding: 1rem;
   }
+
   .showcase-img {
     height: 50vh;
     width: 50vw;
   }
 
-  .card-row{
-    max-width:100vw;
+  .card-row {
+    max-width: 100vw;
   }
 
   @media only screen and (max-width: 600px) {
@@ -27,11 +28,13 @@
       height: 50vh;
       width: 85vw;
     }
+
     .showcase-text {
       margin-left: 1rem !important;
       margin-top: 0;
     }
   }
+
 </style>
 {% endblock %} {% block content %}
 <div class="row showcase m-0">
@@ -41,7 +44,7 @@
   <div class="text-uppercase showcase-text col-md-5">
     <h1 class="text-white">
       Don't let the lack of <span class="text-custom-1"> material </span> stop
-      you from learning. <br /> <br/>
+      you from learning. <br /> <br />
       Explore the <span class="text-custom-1"> Listed </span> Material and start
       your learning Today
     </h1>
@@ -49,10 +52,10 @@
 </div>
 
 <div class="container">
-<div class="text-center">
-<h2 class="text-white m-3">Explore Materials &GreaterGreater;</h2>
-</div>
-<div class="row card-row">
+  <div class="text-center">
+    <h2 class="text-white m-3">Explore Materials &GreaterGreater;</h2>
+  </div>
+  <div class="row card-row">
     <div class="col-6 col-md-3 d-md-flex m-3">
       {% include '_includes/tech_card.html' %}
     </div>
@@ -68,6 +71,6 @@
     <div class="col-6 col-md-3 d-md-flex m-3">
       {% include '_includes/tech_card.html' %}
     </div>
-</div>
+  </div>
 </div>
 {% endblock %}
