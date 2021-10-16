@@ -33,7 +33,7 @@
   {%if messages %}
   <ul class="messages list-unstyled text-center">
     {% for message in messages %}
-    <li class="bg-info mx-3 p-2 text-white-50 {% if message.tags %}{{ message.tags }}{% endif %}">
+    <li class="bg-info m-3 p-1 text-white {% if message.tags %}{{ message.tags }}{% endif %}">
       {{ message }}
     </li>
     {% endfor %}
