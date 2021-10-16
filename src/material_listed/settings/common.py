@@ -51,7 +51,10 @@ THIRD_PARTY_APPS = (
     "allauth.socialaccount.providers.google",
 )
 
-OUR_APPS = ("base",)
+OUR_APPS = (
+    "base",
+    "resources",
+)
 
 INSTALLED_APPS = CORE_APPS + OUR_APPS + THIRD_PARTY_APPS
 
